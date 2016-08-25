@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F0502BD1D6EE4F900EA24F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0502BC1D6EE4F900EA24F0 /* AppDelegate.swift */; };
+		3F0502BF1D6EE4FA00EA24F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0502BE1D6EE4FA00EA24F0 /* Assets.xcassets */; };
+		3F0502C21D6EE4FA00EA24F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0502C01D6EE4FA00EA24F0 /* MainMenu.xib */; };
+		3F0502CD1D6EE4FA00EA24F0 /* GeekParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0502CC1D6EE4FA00EA24F0 /* GeekParkTests.swift */; };
+		3F0502D81D6EE4FA00EA24F0 /* GeekParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0502D71D6EE4FA00EA24F0 /* GeekParkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F0502C91D6EE4FA00EA24F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0502B11D6EE4F900EA24F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0502B81D6EE4F900EA24F0;
+			remoteInfo = GeekPark;
+		};
+		3F0502D41D6EE4FA00EA24F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0502B11D6EE4F900EA24F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0502B81D6EE4F900EA24F0;
+			remoteInfo = GeekPark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F0502B91D6EE4F900EA24F0 /* GeekPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0502BC1D6EE4F900EA24F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F0502BE1D6EE4FA00EA24F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F0502C11D6EE4FA00EA24F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3F0502C31D6EE4FA00EA24F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0502C81D6EE4FA00EA24F0 /* GeekParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeekParkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0502CC1D6EE4FA00EA24F0 /* GeekParkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekParkTests.swift; sourceTree = "<group>"; };
+		3F0502CE1D6EE4FA00EA24F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0502D31D6EE4FA00EA24F0 /* GeekParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeekParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0502D71D6EE4FA00EA24F0 /* GeekParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekParkUITests.swift; sourceTree = "<group>"; };
+		3F0502D91D6EE4FA00EA24F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F0502B61D6EE4F900EA24F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0502C51D6EE4FA00EA24F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0502D01D6EE4FA00EA24F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F0502B01D6EE4F900EA24F0 = {
+			isa = PBXGroup;
+			children = (
+				3F0502BB1D6EE4F900EA24F0 /* GeekPark */,
+				3F0502CB1D6EE4FA00EA24F0 /* GeekParkTests */,
+				3F0502D61D6EE4FA00EA24F0 /* GeekParkUITests */,
+				3F0502BA1D6EE4F900EA24F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F0502BA1D6EE4F900EA24F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F0502B91D6EE4F900EA24F0 /* GeekPark.app */,
+				3F0502C81D6EE4FA00EA24F0 /* GeekParkTests.xctest */,
+				3F0502D31D6EE4FA00EA24F0 /* GeekParkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F0502BB1D6EE4F900EA24F0 /* GeekPark */ = {
+			isa = PBXGroup;
+			children = (
+				3F0502BC1D6EE4F900EA24F0 /* AppDelegate.swift */,
+				3F0502BE1D6EE4FA00EA24F0 /* Assets.xcassets */,
+				3F0502C01D6EE4FA00EA24F0 /* MainMenu.xib */,
+				3F0502C31D6EE4FA00EA24F0 /* Info.plist */,
+			);
+			path = GeekPark;
+			sourceTree = "<group>";
+		};
+		3F0502CB1D6EE4FA00EA24F0 /* GeekParkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F0502CC1D6EE4FA00EA24F0 /* GeekParkTests.swift */,
+				3F0502CE1D6EE4FA00EA24F0 /* Info.plist */,
+			);
+			path = GeekParkTests;
+			sourceTree = "<group>";
+		};
+		3F0502D61D6EE4FA00EA24F0 /* GeekParkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F0502D71D6EE4FA00EA24F0 /* GeekParkUITests.swift */,
+				3F0502D91D6EE4FA00EA24F0 /* Info.plist */,
+			);
+			path = GeekParkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F0502B81D6EE4F900EA24F0 /* GeekPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0502DC1D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekPark" */;
+			buildPhases = (
+				3F0502B51D6EE4F900EA24F0 /* Sources */,
+				3F0502B61D6EE4F900EA24F0 /* Frameworks */,
+				3F0502B71D6EE4F900EA24F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeekPark;
+			productName = GeekPark;
+			productReference = 3F0502B91D6EE4F900EA24F0 /* GeekPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F0502C71D6EE4FA00EA24F0 /* GeekParkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0502DF1D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekParkTests" */;
+			buildPhases = (
+				3F0502C41D6EE4FA00EA24F0 /* Sources */,
+				3F0502C51D6EE4FA00EA24F0 /* Frameworks */,
+				3F0502C61D6EE4FA00EA24F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0502CA1D6EE4FA00EA24F0 /* PBXTargetDependency */,
+			);
+			name = GeekParkTests;
+			productName = GeekParkTests;
+			productReference = 3F0502C81D6EE4FA00EA24F0 /* GeekParkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F0502D21D6EE4FA00EA24F0 /* GeekParkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0502E21D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekParkUITests" */;
+			buildPhases = (
+				3F0502CF1D6EE4FA00EA24F0 /* Sources */,
+				3F0502D01D6EE4FA00EA24F0 /* Frameworks */,
+				3F0502D11D6EE4FA00EA24F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0502D51D6EE4FA00EA24F0 /* PBXTargetDependency */,
+			);
+			name = GeekParkUITests;
+			productName = GeekParkUITests;
+			productReference = 3F0502D31D6EE4FA00EA24F0 /* GeekParkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F0502B11D6EE4F900EA24F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = lan;
+				TargetAttributes = {
+					3F0502B81D6EE4F900EA24F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3F0502C71D6EE4FA00EA24F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3F0502B81D6EE4F900EA24F0;
+					};
+					3F0502D21D6EE4FA00EA24F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3F0502B81D6EE4F900EA24F0;
+					};
+				};
+			};
+			buildConfigurationList = 3F0502B41D6EE4F900EA24F0 /* Build configuration list for PBXProject "GeekPark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F0502B01D6EE4F900EA24F0;
+			productRefGroup = 3F0502BA1D6EE4F900EA24F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F0502B81D6EE4F900EA24F0 /* GeekPark */,
+				3F0502C71D6EE4FA00EA24F0 /* GeekParkTests */,
+				3F0502D21D6EE4FA00EA24F0 /* GeekParkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F0502B71D6EE4F900EA24F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0502BF1D6EE4FA00EA24F0 /* Assets.xcassets in Resources */,
+				3F0502C21D6EE4FA00EA24F0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0502C61D6EE4FA00EA24F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0502D11D6EE4FA00EA24F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F0502B51D6EE4F900EA24F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0502BD1D6EE4F900EA24F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0502C41D6EE4FA00EA24F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0502CD1D6EE4FA00EA24F0 /* GeekParkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0502CF1D6EE4FA00EA24F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0502D81D6EE4FA00EA24F0 /* GeekParkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F0502CA1D6EE4FA00EA24F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0502B81D6EE4F900EA24F0 /* GeekPark */;
+			targetProxy = 3F0502C91D6EE4FA00EA24F0 /* PBXContainerItemProxy */;
+		};
+		3F0502D51D6EE4FA00EA24F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0502B81D6EE4F900EA24F0 /* GeekPark */;
+			targetProxy = 3F0502D41D6EE4FA00EA24F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F0502C01D6EE4FA00EA24F0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F0502C11D6EE4FA00EA24F0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F0502DA1D6EE4FA00EA24F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F0502DB1D6EE4FA00EA24F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3F0502DD1D6EE4FA00EA24F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GeekPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F0502DE1D6EE4FA00EA24F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GeekPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F0502E01D6EE4FA00EA24F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GeekParkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeekPark.app/Contents/MacOS/GeekPark";
+			};
+			name = Debug;
+		};
+		3F0502E11D6EE4FA00EA24F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GeekParkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeekPark.app/Contents/MacOS/GeekPark";
+			};
+			name = Release;
+		};
+		3F0502E31D6EE4FA00EA24F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GeekParkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekParkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GeekPark;
+			};
+			name = Debug;
+		};
+		3F0502E41D6EE4FA00EA24F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GeekParkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekParkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GeekPark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F0502B41D6EE4F900EA24F0 /* Build configuration list for PBXProject "GeekPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0502DA1D6EE4FA00EA24F0 /* Debug */,
+				3F0502DB1D6EE4FA00EA24F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0502DC1D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0502DD1D6EE4FA00EA24F0 /* Debug */,
+				3F0502DE1D6EE4FA00EA24F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F0502DF1D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekParkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0502E01D6EE4FA00EA24F0 /* Debug */,
+				3F0502E11D6EE4FA00EA24F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F0502E21D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekParkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0502E31D6EE4FA00EA24F0 /* Debug */,
+				3F0502E41D6EE4FA00EA24F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F0502B11D6EE4F900EA24F0 /* Project object */;
+}
