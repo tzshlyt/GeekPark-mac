@@ -14,5 +14,24 @@ class PopViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
     }
+}
+
+extension PopViewController: NSTableViewDataSource {
+    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+        return 5;
+    }
+    
+    func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
+        let cellView: NSTableCellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
+        
+        if tableColumn?.identifier == "GeekParkCell" {
+            cellView.textField?.stringValue = "test"
+            return cellView
+        }
+        return cellView
+    }
+}
+
+extension PopViewController: NSURLSessionTaskDelegate {
     
 }
