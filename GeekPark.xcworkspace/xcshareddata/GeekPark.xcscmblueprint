@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "06CD60D3BE803B2CFCA6FB89C759482C314CF386",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "06CD60D3BE803B2CFCA6FB89C759482C314CF386" : 0,
+    "17DA2C14A2C1114F778E20B7CBE4B91773D897AA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BDDAAB10-D44C-471A-A520-03D104370EE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "06CD60D3BE803B2CFCA6FB89C759482C314CF386" : "GeekPark\/",
+    "17DA2C14A2C1114F778E20B7CBE4B91773D897AA" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GeekPark",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GeekPark.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tzshlyt\/GeekPark-mac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "06CD60D3BE803B2CFCA6FB89C759482C314CF386"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:lanyutao\/test.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17DA2C14A2C1114F778E20B7CBE4B91773D897AA"
+    }
+  ]
+}
