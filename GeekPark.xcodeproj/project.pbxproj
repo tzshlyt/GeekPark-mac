@@ -12,6 +12,9 @@
 		3F0502C21D6EE4FA00EA24F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0502C01D6EE4FA00EA24F0 /* MainMenu.xib */; };
 		3F0502CD1D6EE4FA00EA24F0 /* GeekParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0502CC1D6EE4FA00EA24F0 /* GeekParkTests.swift */; };
 		3F0502D81D6EE4FA00EA24F0 /* GeekParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0502D71D6EE4FA00EA24F0 /* GeekParkUITests.swift */; };
+		3F0502E61D6EEBE900EA24F0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0502E51D6EEBE900EA24F0 /* MainViewController.swift */; };
+		3F0502E91D6EEC0800EA24F0 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0502E71D6EEC0800EA24F0 /* PopViewController.swift */; };
+		3F0502EA1D6EEC0800EA24F0 /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0502E81D6EEC0800EA24F0 /* PopViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		3F0502D31D6EE4FA00EA24F0 /* GeekParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeekParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0502D71D6EE4FA00EA24F0 /* GeekParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekParkUITests.swift; sourceTree = "<group>"; };
 		3F0502D91D6EE4FA00EA24F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0502E51D6EEBE900EA24F0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3F0502E71D6EEC0800EA24F0 /* PopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
+		3F0502E81D6EEC0800EA24F0 /* PopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				3F0502BC1D6EE4F900EA24F0 /* AppDelegate.swift */,
+				3F0502E51D6EEBE900EA24F0 /* MainViewController.swift */,
+				3F0502E71D6EEC0800EA24F0 /* PopViewController.swift */,
+				3F0502E81D6EEC0800EA24F0 /* PopViewController.xib */,
 				3F0502BE1D6EE4FA00EA24F0 /* Assets.xcassets */,
 				3F0502C01D6EE4FA00EA24F0 /* MainMenu.xib */,
 				3F0502C31D6EE4FA00EA24F0 /* Info.plist */,
@@ -223,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0502EA1D6EEC0800EA24F0 /* PopViewController.xib in Resources */,
 				3F0502BF1D6EE4FA00EA24F0 /* Assets.xcassets in Resources */,
 				3F0502C21D6EE4FA00EA24F0 /* MainMenu.xib in Resources */,
 			);
@@ -250,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0502BD1D6EE4F900EA24F0 /* AppDelegate.swift in Sources */,
+				3F0502E61D6EEBE900EA24F0 /* MainViewController.swift in Sources */,
+				3F0502E91D6EEC0800EA24F0 /* PopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +483,7 @@
 				3F0502DE1D6EE4FA00EA24F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F0502DF1D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekParkTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +492,7 @@
 				3F0502E11D6EE4FA00EA24F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F0502E21D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekParkUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +501,7 @@
 				3F0502E41D6EE4FA00EA24F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
