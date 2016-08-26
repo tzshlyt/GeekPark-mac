@@ -9,10 +9,13 @@
 import Cocoa
 
 class PopViewController: NSViewController {
-
+    let httphelper = HttpHelper()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        
+        httphelper.getNews()
     }
 }
 

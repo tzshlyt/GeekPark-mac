@@ -9,6 +9,17 @@
 import Cocoa
 import Alamofire
 
+
+
 class HttpHelper: NSObject {
+    let url = "http://www.geekpark.net/"
+    
+    func getNews() {
+        Alamofire.request(.GET, url).responseData { response in
+            print(response.request)
+            print(response.response)
+            print(response.data)
+        }
+    }
 
 }

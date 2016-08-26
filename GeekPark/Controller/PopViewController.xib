@@ -113,7 +113,7 @@
                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </clipView>
                     <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="HbP-do-qtr">
-                        <rect key="frame" x="1" y="118.91092169284821" width="237.80341339111328" height="15"/>
+                        <rect key="frame" x="1" y="-14" width="0.0" height="15"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="M4r-a5-zin">
