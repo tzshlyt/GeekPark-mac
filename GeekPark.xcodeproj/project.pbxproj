@@ -17,6 +17,7 @@
 		3F0502FF1D6FD42400EA24F0 /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0502FE1D6FD42400EA24F0 /* PopViewController.xib */; };
 		3F0503011D6FD45E00EA24F0 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0503001D6FD45E00EA24F0 /* HttpHelper.swift */; };
 		3F8BA9491D7157EE00DD032C /* GPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BA9481D7157EE00DD032C /* GPModel.swift */; };
+		3F8BA94D1D717F5000DD032C /* GPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BA94C1D717F5000DD032C /* GPCell.swift */; };
 		6FD30BF52EA491A1E56546C0 /* Pods_GeekPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26E16F3557374315B9F67F9 /* Pods_GeekPark.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		3F0502FE1D6FD42400EA24F0 /* PopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopViewController.xib; sourceTree = "<group>"; };
 		3F0503001D6FD45E00EA24F0 /* HttpHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
 		3F8BA9481D7157EE00DD032C /* GPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPModel.swift; sourceTree = "<group>"; };
+		3F8BA94C1D717F5000DD032C /* GPCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCell.swift; sourceTree = "<group>"; };
 		41A1EC4EFEE7A8B9B6D2C328 /* Pods-GeekPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekPark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark.debug.xcconfig"; sourceTree = "<group>"; };
 		63E37BCF89EED46ED5729115 /* Pods-GeekPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark.release.xcconfig"; sourceTree = "<group>"; };
 		E26E16F3557374315B9F67F9 /* Pods_GeekPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 		3F0502EB1D6F447500EA24F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3F8BA94C1D717F5000DD032C /* GPCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				3F0502FB1D6FD41900EA24F0 /* MainViewController.swift in Sources */,
 				3F0502BD1D6EE4F900EA24F0 /* AppDelegate.swift in Sources */,
 				3F8BA9491D7157EE00DD032C /* GPModel.swift in Sources */,
+				3F8BA94D1D717F5000DD032C /* GPCell.swift in Sources */,
 				3F0503011D6FD45E00EA24F0 /* HttpHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

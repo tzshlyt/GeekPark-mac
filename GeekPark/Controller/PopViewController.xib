@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PopViewController" customModule="GeekPark" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="w6t-j9-w6z" id="jZe-t7-6ds"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -41,13 +42,13 @@
                         </textField>
                     </subviews>
                 </customView>
-                <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="60" horizontalPageScroll="10" verticalLineScroll="60" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbB-jp-Jud">
+                <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbB-jp-Jud">
                     <rect key="frame" x="0.0" y="0.0" width="400" height="226"/>
                     <clipView key="contentView" ambiguous="YES" id="b25-FB-ZFf">
                         <rect key="frame" x="1" y="1" width="398" height="224"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="58" rowSizeStyle="automatic" viewBased="YES" id="w6t-j9-w6z">
+                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="w6t-j9-w6z">
                                 <rect key="frame" x="0.0" y="0.0" width="398" height="224"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
@@ -63,7 +64,7 @@
                                         <customCell key="dataCell" alignment="left" id="wFr-eP-1B1"/>
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         <prototypeCellViews>
-                                            <tableCellView id="pOM-7m-NfJ">
+                                            <tableCellView identifier="GeekParkCell" id="pOM-7m-NfJ" customClass="GPCell" customModule="GeekPark" customModuleProvider="target">
                                                 <rect key="frame" x="1" y="1" width="395" height="58"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -97,8 +98,8 @@
                                                     </textField>
                                                 </subviews>
                                                 <connections>
-                                                    <outlet property="imageView" destination="E9b-p7-h7p" id="a03-uy-DeB"/>
-                                                    <outlet property="textField" destination="md0-Uf-HJZ" id="DOP-fk-PYB"/>
+                                                    <outlet property="imgView" destination="E9b-p7-h7p" id="SZf-wC-JUq"/>
+                                                    <outlet property="titleTextField" destination="md0-Uf-HJZ" id="B0s-Mq-JWt"/>
                                                 </connections>
                                             </tableCellView>
                                         </prototypeCellViews>
@@ -124,13 +125,6 @@
             </subviews>
             <point key="canvasLocation" x="356" y="327.5"/>
         </customView>
-        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Za0-Q7-Blm">
-            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon" id="FhR-Bp-ys7"/>
-            <point key="canvasLocation" x="89" y="286"/>
-        </imageView>
-        <customCell alignment="left" id="MuU-oL-t0f"/>
     </objects>
     <resources>
         <image name="icon" width="180" height="180"/>

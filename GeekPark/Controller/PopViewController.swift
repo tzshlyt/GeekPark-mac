@@ -9,26 +9,33 @@
 import Cocoa
 
 class PopViewController: NSViewController {
+    
+    @IBOutlet weak var tableView: NSTableView!
     let httphelper = HttpHelper()
+    var models = [GPModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         
-        httphelper.getNews()
+        httphelper.getNews { result in
+            self.models = result
+            self.tableView.reloadData()
+        }
     }
 }
 
 extension PopViewController: NSTableViewDataSource {
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-        return 5;
+        return models.count;
     }
     
-    func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
-        let cellView: NSTableCellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: tableView) as! GPCell
         
-        if tableColumn?.identifier == "GeekParkCell" {
-            cellView.textField?.stringValue = "test"
+        if tableColumn!.identifier == "GeekParkCell" {
+            let model = self.models[row]
+            cellView.setupModel(model)
             return cellView
         }
         return cellView

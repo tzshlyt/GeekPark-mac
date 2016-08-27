@@ -13,7 +13,7 @@ import Fuzi
 class HttpHelper: NSObject {
     let url = "http://www.geekpark.net/"
 
-    func getNews() {
+    func getNews(handle: (models: [GPModel]) -> ()) {
         Alamofire.request(.GET, url).responseString { response in
             let html = response.result.value
             
@@ -34,11 +34,9 @@ class HttpHelper: NSObject {
                     }
                     
                     let model = GPModel(title: title, imgUrl: imgUrl)
-                    
                     models.append(model)
                 }
-                print(models.count)
-            
+                handle(models: models)
             }catch let error {
                 print(error)
             }
