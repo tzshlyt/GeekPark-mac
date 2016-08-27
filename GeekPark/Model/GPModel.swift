@@ -13,4 +13,5 @@ struct GPModel {
     var imgUrl: String
     var category: String
     var time: String
+    var href: String
 }

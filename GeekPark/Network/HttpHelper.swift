@@ -11,7 +11,7 @@ import Alamofire
 import Fuzi
 
 class HttpHelper: NSObject {
-    let url = "http://www.geekpark.net/"
+    let url = "http://www.geekpark.net"
 
     func getNews(handle: (models: [GPModel]) -> ()) {
         Alamofire.request(.GET, url).responseString { response in
@@ -26,6 +26,7 @@ class HttpHelper: NSObject {
                     var imgUrl = String()
                     var category = String()
                     var time = String()
+                    var href = String()
                     
                     if let imgEle = article.firstChild(xpath:".//a/div/img") {
                         imgUrl = imgEle["data-src"]!
@@ -37,6 +38,7 @@ class HttpHelper: NSObject {
                     
                     if let titleEle = article.firstChild(xpath:".//div/div/a[2]") {
                         title = titleEle["data-event-label"]!
+                        href = self.url + titleEle["href"]!
                     }
                     
                     if let timeEle = article.firstChild(xpath: ".//div/div/div/div/span[2]/a") {
@@ -47,7 +49,8 @@ class HttpHelper: NSObject {
                         title: title,
                         imgUrl: imgUrl,
                         category: category,
-                        time: time
+                        time: time,
+                        href: href
                     )
                     
                     models.append(model)

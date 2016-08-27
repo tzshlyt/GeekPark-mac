@@ -42,6 +42,9 @@ extension PopViewController: NSTableViewDataSource {
     }
 }
 
-extension PopViewController: NSURLSessionTaskDelegate {
-    
+extension PopViewController: NSTableViewDelegate {
+    func tableViewSelectionDidChange(notification: NSNotification) {
+        let table = notification.object as! NSTableView
+        NSWorkspace.sharedWorkspace().openURL(NSURL(string: models[table.selectedRow].href)!)
+    }
 }
