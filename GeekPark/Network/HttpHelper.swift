@@ -24,16 +24,32 @@ class HttpHelper: NSObject {
                 for article in doc.xpath("//article[@class='article-item']") {
                     var title = String()
                     var imgUrl = String()
+                    var category = String()
+                    var time = String()
                     
-                    if let a = article.firstChild(xpath:".//a/div/img") {
-                        imgUrl = a["data-src"]!
+                    if let imgEle = article.firstChild(xpath:".//a/div/img") {
+                        imgUrl = imgEle["data-src"]!
                     }
                     
-                    if let d = article.firstChild(xpath:".//div/div/a[2]") {
-                        title = d["data-event-label"]!
+                    if let categoryEle =  article.firstChild(xpath: ".//div/div/a[1]") {
+                        category = categoryEle.stringValue
                     }
                     
-                    let model = GPModel(title: title, imgUrl: imgUrl)
+                    if let titleEle = article.firstChild(xpath:".//div/div/a[2]") {
+                        title = titleEle["data-event-label"]!
+                    }
+                    
+                    if let timeEle = article.firstChild(xpath: ".//div/div/div/div/span[2]/a") {
+                        time = timeEle["title"]!
+                    }
+                    
+                    let model = GPModel(
+                        title: title,
+                        imgUrl: imgUrl,
+                        category: category,
+                        time: time
+                    )
+                    
                     models.append(model)
                 }
                 handle(models: models)

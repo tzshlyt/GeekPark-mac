@@ -11,4 +11,6 @@ import Foundation
 struct GPModel {
     var title: String
     var imgUrl: String
+    var category: String
+    var time: String
 }

@@ -98,7 +98,10 @@
                                                     </textField>
                                                 </subviews>
                                                 <connections>
+                                                    <outlet property="categoryText" destination="QzO-7O-PSL" id="ZDV-2B-Jxx"/>
                                                     <outlet property="imgView" destination="E9b-p7-h7p" id="SZf-wC-JUq"/>
+                                                    <outlet property="timeText" destination="Z2B-lu-ZsE" id="f6M-gp-vi8"/>
+                                                    <outlet property="titleText" destination="md0-Uf-HJZ" id="hKW-Dq-Hp9"/>
                                                     <outlet property="titleTextField" destination="md0-Uf-HJZ" id="B0s-Mq-JWt"/>
                                                 </connections>
                                             </tableCellView>
