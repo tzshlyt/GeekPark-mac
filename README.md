@@ -22,6 +22,12 @@ v2.0版本: `macos10.12.5`/`Xcode8.3.3`/`Swift3.1`
     pod install
     open GeekPark.xcworkspace
     
+## 发布
+
+安装包下载: [GeekPark.app.zip](https://github.com/tzshlyt/GeekPark-mac/releases/)
+    
+博客地址: [http://www.jianshu.com/p/65ba9979dab8](http://www.jianshu.com/p/65ba9979dab8)
+    
 ## License
 
 MIT
