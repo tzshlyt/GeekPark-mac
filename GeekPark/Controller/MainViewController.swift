@@ -10,7 +10,7 @@ import Cocoa
 
 class MainViewController: NSViewController {
 
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemLength)
     let popover = NSPopover()
     
     override func awakeFromNib() {
@@ -25,19 +25,19 @@ class MainViewController: NSViewController {
         // Do view setup here.
     }
     
-    func statusItemClicked(sender: AnyObject) -> Void{
-        if(popover.shown) {
+    func statusItemClicked(_ sender: AnyObject) -> Void{
+        if(popover.isShown) {
             closePopover(sender)
         }else {
             showPopover(sender)
         }
     }
     
-    func closePopover(sender: AnyObject?) -> Void {
+    func closePopover(_ sender: AnyObject?) -> Void {
         popover.performClose(sender)
     }
     
-    func showPopover(sender: AnyObject?) -> Void {
-        popover.showRelativeToRect((statusItem.button?.bounds)!, ofView: statusItem.button!, preferredEdge: NSRectEdge.MinY)
+    func showPopover(_ sender: AnyObject?) -> Void {
+        popover.show(relativeTo: (statusItem.button?.bounds)!, of: statusItem.button!, preferredEdge: NSRectEdge.minY)
     }
 }

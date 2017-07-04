@@ -15,15 +15,17 @@ class GPCell: NSTableCellView {
     @IBOutlet weak var categoryText: NSTextField!
     @IBOutlet weak var timeText: NSTextField!
     
-    func setupModel(model: GPModel) {
+    func setupModel(_ model: GPModel) {
         self.titleText.stringValue = model.title
         self.categoryText.stringValue = model.category
         self.timeText.stringValue = model.time
-        self.imgView.kf_setImageWithURL(NSURL(string: model.imgUrl), placeholderImage: NSImage(named: "test"))
-    }
+        self.imgView.kf.setImage(with: URL(string: model.imgUrl),
+                                 placeholder: NSImage(named: "test"),
+                                 options:nil, progressBlock: nil, completionHandler: nil)
+        }
 
-    override func drawRect(dirtyRect: NSRect) {
-        super.drawRect(dirtyRect)
+    override func draw(_ dirtyRect: NSRect) {
+        super.draw(dirtyRect)
 
         // Drawing code here.
     }

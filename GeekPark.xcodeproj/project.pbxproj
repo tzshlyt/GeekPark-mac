@@ -18,7 +18,7 @@
 		3F0503011D6FD45E00EA24F0 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0503001D6FD45E00EA24F0 /* HttpHelper.swift */; };
 		3F8BA9491D7157EE00DD032C /* GPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BA9481D7157EE00DD032C /* GPModel.swift */; };
 		3F8BA94D1D717F5000DD032C /* GPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8BA94C1D717F5000DD032C /* GPCell.swift */; };
-		6FD30BF52EA491A1E56546C0 /* Pods_GeekPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26E16F3557374315B9F67F9 /* Pods_GeekPark.framework */; };
+		91210F0B144CD21438E8EC11 /* Pods_GeekPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64DF004FFDDA52E8DBFAA35 /* Pods_GeekPark.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +54,13 @@
 		3F0502FC1D6FD41F00EA24F0 /* PopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
 		3F0502FE1D6FD42400EA24F0 /* PopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopViewController.xib; sourceTree = "<group>"; };
 		3F0503001D6FD45E00EA24F0 /* HttpHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
+		3F7750021F0BCD8D002CF8A6 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		3F7750041F0BCD9D002CF8A6 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		3F8BA9481D7157EE00DD032C /* GPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPModel.swift; sourceTree = "<group>"; };
 		3F8BA94C1D717F5000DD032C /* GPCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCell.swift; sourceTree = "<group>"; };
-		41A1EC4EFEE7A8B9B6D2C328 /* Pods-GeekPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekPark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark.debug.xcconfig"; sourceTree = "<group>"; };
-		63E37BCF89EED46ED5729115 /* Pods-GeekPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark.release.xcconfig"; sourceTree = "<group>"; };
-		E26E16F3557374315B9F67F9 /* Pods_GeekPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		805A7607F982DFC2B6EB926F /* Pods-GeekPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark.release.xcconfig"; sourceTree = "<group>"; };
+		A0990BF6E61650AFB14C5D8F /* Pods-GeekPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekPark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark.debug.xcconfig"; sourceTree = "<group>"; };
+		D64DF004FFDDA52E8DBFAA35 /* Pods_GeekPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD30BF52EA491A1E56546C0 /* Pods_GeekPark.framework in Frameworks */,
+				91210F0B144CD21438E8EC11 /* Pods_GeekPark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +96,8 @@
 				3F0502CB1D6EE4FA00EA24F0 /* GeekParkTests */,
 				3F0502D61D6EE4FA00EA24F0 /* GeekParkUITests */,
 				3F0502BA1D6EE4F900EA24F0 /* Products */,
-				8FC3F86877FAFF080630DA8D /* Pods */,
-				AF06E9F07D3566920700C270 /* Frameworks */,
+				BF9CEDC0687F38EE20FE1D4B /* Pods */,
+				525661BCAB0A2D0386C318EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,21 +178,23 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		8FC3F86877FAFF080630DA8D /* Pods */ = {
+		525661BCAB0A2D0386C318EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				41A1EC4EFEE7A8B9B6D2C328 /* Pods-GeekPark.debug.xcconfig */,
-				63E37BCF89EED46ED5729115 /* Pods-GeekPark.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AF06E9F07D3566920700C270 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E26E16F3557374315B9F67F9 /* Pods_GeekPark.framework */,
+				3F7750041F0BCD9D002CF8A6 /* libxml2.2.tbd */,
+				3F7750021F0BCD8D002CF8A6 /* libxml2.tbd */,
+				D64DF004FFDDA52E8DBFAA35 /* Pods_GeekPark.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF9CEDC0687F38EE20FE1D4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0990BF6E61650AFB14C5D8F /* Pods-GeekPark.debug.xcconfig */,
+				805A7607F982DFC2B6EB926F /* Pods-GeekPark.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F0502DC1D6EE4FA00EA24F0 /* Build configuration list for PBXNativeTarget "GeekPark" */;
 			buildPhases = (
-				51C00A927D181B769CC60B34 /* Check Pods Manifest.lock */,
+				C4E5F6AF50313A938434D05D /* [CP] Check Pods Manifest.lock */,
 				3F0502B51D6EE4F900EA24F0 /* Sources */,
 				3F0502B61D6EE4F900EA24F0 /* Frameworks */,
 				3F0502B71D6EE4F900EA24F0 /* Resources */,
-				6FCD901FA4077AB89DD8E535 /* Embed Pods Frameworks */,
-				5512AEB83EAF6935C6C2FC92 /* Copy Pods Resources */,
+				451FD9F70F5FFD5AE954C0C6 /* [CP] Embed Pods Frameworks */,
+				DE42AE6DC0731FBDBD84CB65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,18 +263,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = lan;
 				TargetAttributes = {
 					3F0502B81D6EE4F900EA24F0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 					};
 					3F0502C71D6EE4FA00EA24F0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 3F0502B81D6EE4F900EA24F0;
 					};
 					3F0502D21D6EE4FA00EA24F0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = 3F0502B81D6EE4F900EA24F0;
 					};
 				};
@@ -323,49 +330,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		51C00A927D181B769CC60B34 /* Check Pods Manifest.lock */ = {
+		451FD9F70F5FFD5AE954C0C6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5512AEB83EAF6935C6C2FC92 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6FCD901FA4077AB89DD8E535 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E5F6AF50313A938434D05D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE42AE6DC0731FBDBD84CB65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeekPark/Pods-GeekPark-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -441,8 +448,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -486,8 +495,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -506,32 +517,37 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		3F0502DD1D6EE4FA00EA24F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41A1EC4EFEE7A8B9B6D2C328 /* Pods-GeekPark.debug.xcconfig */;
+			baseConfigurationReference = A0990BF6E61650AFB14C5D8F /* Pods-GeekPark.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GeekPark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		3F0502DE1D6EE4FA00EA24F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63E37BCF89EED46ED5729115 /* Pods-GeekPark.release.xcconfig */;
+			baseConfigurationReference = 805A7607F982DFC2B6EB926F /* Pods-GeekPark.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GeekPark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -540,10 +556,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = GeekParkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekParkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeekPark.app/Contents/MacOS/GeekPark";
 			};
 			name = Debug;
@@ -553,10 +571,12 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = GeekParkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekParkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeekPark.app/Contents/MacOS/GeekPark";
 			};
 			name = Release;
@@ -569,6 +589,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekParkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = GeekPark;
 			};
 			name = Debug;
@@ -581,6 +602,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lan.GeekParkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = GeekPark;
 			};
 			name = Release;

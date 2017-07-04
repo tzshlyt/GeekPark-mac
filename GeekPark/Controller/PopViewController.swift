@@ -28,31 +28,31 @@ class PopViewController: NSViewController {
     }
     
     func setTime() {
-        let formatter = NSDateFormatter()
-        formatter.timeStyle = .MediumStyle
-        let timeStr = formatter.stringFromDate(NSDate())
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        let timeStr = formatter.string(from: Date())
         uptimeTextView.stringValue = "更新时间 \(timeStr)"
     }
     
-    @IBAction func settingBtnClick(sender: AnyObject) {
+    @IBAction func settingBtnClick(_ sender: AnyObject) {
         let menu = NSMenu()
         menu.addItem(NSMenuItem(title: "退出", action: #selector(quit), keyEquivalent: "q"))
         
-        NSMenu.popUpContextMenu(menu, withEvent: NSApp.currentEvent!, forView: sender as! NSView)
+        NSMenu.popUpContextMenu(menu, with: NSApp.currentEvent!, for: sender as! NSView)
     }
     
     func quit() {
-        NSApplication.sharedApplication().terminate(self)
+        NSApplication.shared().terminate(self)
     }
 }
 
 extension PopViewController: NSTableViewDataSource {
-    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+    func numberOfRows(in tableView: NSTableView) -> Int {
         return models.count;
     }
     
-    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let cellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: tableView) as! GPCell
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let cellView = tableView.make(withIdentifier: tableColumn!.identifier, owner: tableView) as! GPCell
         
         if tableColumn!.identifier == "GeekParkCell" {
             let model = self.models[row]
@@ -64,8 +64,8 @@ extension PopViewController: NSTableViewDataSource {
 }
 
 extension PopViewController: NSTableViewDelegate {
-    func tableViewSelectionDidChange(notification: NSNotification) {
+    func tableViewSelectionDidChange(_ notification: Notification) {
         let table = notification.object as! NSTableView
-        NSWorkspace.sharedWorkspace().openURL(NSURL(string: models[table.selectedRow].href)!)
+        NSWorkspace.shared().open(URL(string: models[table.selectedRow].href)!)
     }
 }

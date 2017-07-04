@@ -1,16 +1,18 @@
 PODS:
-  - Alamofire (3.4.1)
-  - Fuzi (0.3.1)
-  - Kingfisher (2.4.3)
+  - Alamofire (4.5.0)
+  - Fuzi (1.0.1)
+  - Kingfisher (3.10.2)
 
 DEPENDENCIES:
-  - Alamofire (= 3.4.1)
-  - Fuzi (= 0.3.1)
-  - Kingfisher (= 2.4.3)
+  - Alamofire (= 4.5.0)
+  - Fuzi (= 1.0.1)
+  - Kingfisher (= 3.10.2)
 
 SPEC CHECKSUMS:
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
-  Fuzi: 25118b725a1637f1676f63ae1acbba1f30a5dd6c
-  Kingfisher: 322a9c1c5b03212c1e741d6bece72d387b01a77a
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Fuzi: 851403654bac55675aaeed815d0c8a1d3e3d3e8b
+  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 39fc42fa5d139c24b38c33f22c9c97723adc0f40
+
+COCOAPODS: 1.2.1
