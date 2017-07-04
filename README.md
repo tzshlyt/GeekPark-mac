@@ -22,7 +22,7 @@ v1.0版本: `macos10.12.5`/`Xcode7.3.1`/`Swift2.2`
     
 ## 发布
 
-安装包: [GeekPark.app.zip](https://github.com/tzshlyt/GeekPark-mac/releases/)
+安装包下载: [GeekPark.app.zip](https://github.com/tzshlyt/GeekPark-mac/releases/)
     
 博客地址: [http://www.jianshu.com/p/65ba9979dab8](http://www.jianshu.com/p/65ba9979dab8)
     
