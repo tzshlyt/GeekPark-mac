@@ -41,8 +41,8 @@ class PopViewController: NSViewController {
         NSMenu.popUpContextMenu(menu, with: NSApp.currentEvent!, for: sender as! NSView)
     }
     
-    func quit() {
-        NSApplication.shared().terminate(self)
+    @objc func quit() {
+        NSApplication.shared.terminate(self)
     }
 }
 
@@ -52,9 +52,9 @@ extension PopViewController: NSTableViewDataSource {
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let cellView = tableView.make(withIdentifier: tableColumn!.identifier, owner: tableView) as! GPCell
+        let cellView = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: tableView) as! GPCell
         
-        if tableColumn!.identifier == "GeekParkCell" {
+        if tableColumn!.identifier.rawValue == "GeekParkCell" {
             let model = self.models[row]
             cellView.setupModel(model)
             return cellView
@@ -66,6 +66,6 @@ extension PopViewController: NSTableViewDataSource {
 extension PopViewController: NSTableViewDelegate {
     func tableViewSelectionDidChange(_ notification: Notification) {
         let table = notification.object as! NSTableView
-        NSWorkspace.shared().open(URL(string: models[table.selectedRow].href)!)
+        NSWorkspace.shared.open(URL(string: models[table.selectedRow].href)!)
     }
 }
