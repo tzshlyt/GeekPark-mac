@@ -10,8 +10,8 @@ import Cocoa
 
 class MainViewController: NSViewController {
 
-    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-    let popover = NSPopover()
+    private lazy var statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+    private let popover = NSPopover()
     
     override func awakeFromNib() {
         statusItem.image = NSImage(named:"statusIcon")

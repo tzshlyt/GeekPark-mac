@@ -13,17 +13,16 @@ class PopViewController: NSViewController {
     @IBOutlet weak var tableView: NSTableView!
     @IBOutlet weak var uptimeTextView: NSTextField!
     
-    let httphelper = HttpHelper()
-    var models = [GPModel]()
+    private let httphelper = HttpHelper()
+    private var models = [GPModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
         
-        httphelper.getNews { result in
-            self.models = result
-            self.tableView.reloadData()
-            self.setTime()
+        httphelper.getNews {  [weak self] result in
+            self?.models = result
+            self?.tableView.reloadData()
+            self?.setTime()
         }
     }
     
